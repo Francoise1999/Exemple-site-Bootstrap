@@ -11,15 +11,6 @@ body{
     background-color: #000;
 }
 
-header{
-    width: 100%;
-    height: 600px;
-    background-image: url(../img/man-riding-bicycle-during-nightfall-207779.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: "Raleway";
-}
-
 .navbar{
     opacity: 0.6;
 }
@@ -29,16 +20,29 @@ header{
     padding: 50px 20px;
     font-family: "Raleway";
     text-align: center;
-    border-bottom: 1px solid #fff;
 }
 
 header{
-    h1{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/man-riding-bicycle-during-nightfall-207779.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Raleway";
+    
+    .title-main{
         color: white;
         text-align: center;
         padding: 17%;
-        font-size: 50px;
+        h1{
+            font-size: 50px;
+        }
+        h6{
+            color: #fff;
+            text-align: center;
+        }
     }
+    
 }
 
 
@@ -55,7 +59,7 @@ header{
         @extend %bloc;
         width: 50%;
         margin: 0 auto;
-        
+        border-bottom: 1px solid #fff;
 
         h2, h6{
             margin-bottom: 30px;
@@ -64,6 +68,7 @@ header{
 
     .gallery{
         @extend %bloc;
+        
         img{
             @extend %img-gallery; 
         }
@@ -72,6 +77,109 @@ header{
 
     .louer{
         @extend %bloc;
+
+        h2{
+            padding-bottom: 20px;
+            width: 50%;
+            border-top: 1px solid #fff;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+        form{
+            label{
+                padding: 10px;
+            }
+        
+            input{
+                margin: 10px;
+                background-color: $dark-color;
+                color: #fff;
+                border-radius: 5px;
+                border: 1px solid #fff;
+            }
+        
+            input[type="submit"]{
+                background-color: $dark-color;
+                border: 1px solid #fff;
+                color: #fff;
+                border-radius: 5px;
+                padding: 5px 10px;
+        
+                &:hover{
+                    background-color: #fff;
+                    color: #000;
+                    transition: 1s;
+                }
+            }
+
+            select{
+                background-color: $dark-color;
+                color: #fff;
+                border-radius: 5px;
+                border: 1px solid #fff;
+            }
+        }
+    
     }
+
+    
+    .contact{
+        @extend %bloc;
+        h2{
+            padding-bottom: 20px;
+            width: 50%;
+            border-top: 1px solid #fff;
+            margin: 0 auto;
+            padding-top: 40px;  
+        }
+        form{
+            text-align: left;
+            width: 70%;
+            margin: 0 auto;
+            label{
+                padding: 10px;
+                
+            }
+        
+            input{
+                margin: 10px;
+                width: 50%;
+                background-color: $dark-color;
+                border: 1px solid #fff;
+                border-radius: 5px;
+                color: #fff;
+                width: 100%;
+            }
+
+            textarea{
+                width: 100%;
+                background-color: $dark-color;
+                color: #fff;
+                border-radius: 5px;
+                border: 1px solid #fff;
+            }
+        
+            input[type="submit"]{
+                background-color: $dark-color;
+                border: 1px solid #fff;
+                color: #fff;
+                border-radius: 5px;
+                padding: 5px 10px;
+                width: 100%;
+                padding: 10px 20px;
+        
+                &:hover{
+                    background-color: #fff;
+                    color: #000;
+                    transition: 1s;
+                }
+            }
+        }
+    
+    }
+}
+
+footer{
+    background-color: $dark-color;
 }
 
