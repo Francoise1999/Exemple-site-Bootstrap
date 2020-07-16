@@ -28,7 +28,7 @@
               <a class="nav-link" href="#">Galerie</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Réservation</a>
+              <a class="nav-link" href="#">Louer</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contactez-nous</a>
@@ -39,14 +39,56 @@
       <header>
         <h1>Plus rapide, plus loin !</h1>
       </header>
-    <div class="container">
+    <div class="container-fluid">
       <div class="intro">
+        <h2>Lorem ipsum dolor sit amet consectetur</h2>
+        <h6>Lorem ipsum dolor sit amet</h6>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat mollitia veritatis quos consectetur rem tenetur adipisci, facilis tempora vel excepturi qui neque ut corporis sed magnam. Ad inventore saepe corrupti.
           Rerum eius sequi temporibus quasi molestias tempora non ad magnam, aliquid quas a quibusdam illum vero autem totam dolores sit corporis voluptate et! Aperiam, nisi itaque reprehenderit magni amet dolores.
-          Aspernatur earum, alias pariatur architecto suscipit fugit voluptates eos dolorem voluptate porro quam nulla asperiores neque, sapiente inventore sed. Quae, ab reprehenderit! Optio aspernatur obcaecati laudantium, vel amet mollitia officia.
         </p>
       </div>
+      <div class="gallery">
+        <h2>Gallery</h2>
+        <div class="row">
+          <div class="col-lg-4">
+              <img src="./img/black-steel-lamp-post-1070945.jpg" alt="">
+          </div>
+            <div class="col-lg-4">
+              <img src="./img/red-cruiser-bike-parked-on-metal-bike-stand-805303.jpg" alt="">
+            </div>
+            <div class="col-lg-4">
+              <img src="./img/photography-of-girl-riding-bike-beside-man-1005803.jpg" alt="">
+            </div>
+            <div class="col-lg-4">
+              <img src="./img/bicycle-bike-repair-shop-132682.jpg" alt="">
+            </div>
+            <div class="col-lg-4">
+              <img src="./img/man-riding-bicycle-on-city-street-310983.jpg" alt="">
+            </div>
+        </div>
+      </div>
+      <div class="louer">
+        <h2>Louer une bicyclette</h2>
+        <form action="">
+          <label for="selection">Sélectionnez un vélo : </label><br>
+          <select name="selction-bicycle" id="selection">
+            <option value="">--Choisissez une option--</option>
+            <option value="velo-electrique">Vélo electrique</option>
+            <option value="velo-sport">Vélo sport</option>
+            <option value="velo-triporteur">Vélo triporteur</option>
+          </select><br>
+
+          <label for="numero-memebre">Entrez votre numéro de membre</label><br>
+          <input type="number" name="numero-membre" id="numero-membre"><br>
+
+          <input type="submit" value="Valider">
+        </form>
+      </div>
     </div>
+    <footer>
+      <p>Tout droit réservé - Juillet 2020</p>
+    </footer>
+    
 </body>
 </html>

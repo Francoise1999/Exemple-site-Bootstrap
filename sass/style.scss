@@ -1,16 +1,35 @@
 $dark-color : #212529;
 $text-color : #fff;
 
+@font-face{
+    font-family: 'Raleway';
+    src: url("../font/Raleway-VariableFont_wght.ttf");
+}
+
+
+body{
+    background-color: #000;
+}
+
 header{
     width: 100%;
     height: 600px;
     background-image: url(../img/man-riding-bicycle-during-nightfall-207779.jpg);
     background-attachment: fixed;
     background-size: cover;
+    font-family: "Raleway";
 }
 
 .navbar{
     opacity: 0.6;
+}
+
+%bloc{
+    color: $text-color;
+    padding: 50px 20px;
+    font-family: "Raleway";
+    text-align: center;
+    border-bottom: 1px solid #fff;
 }
 
 header{
@@ -22,10 +41,37 @@ header{
     }
 }
 
-body{
+
+%img-gallery{
+    width: 300px;
+    margin: 20px;
+}
+
+.container-fluid{
     background-color: $dark-color;
+    // opacity: 0.4;
 
     .intro{
-        color: $text-color;
+        @extend %bloc;
+        width: 50%;
+        margin: 0 auto;
+        
+
+        h2, h6{
+            margin-bottom: 30px;
+        }
+    }
+
+    .gallery{
+        @extend %bloc;
+        img{
+            @extend %img-gallery; 
+        }
+          
+    }
+
+    .louer{
+        @extend %bloc;
     }
 }
+
