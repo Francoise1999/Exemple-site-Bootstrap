@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <title>SIte de niche de bicyclette</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+<body data-spy="scroll" data-target="#mainmenu" data-offset="0">
+    <nav id="mainmenu" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
             <img src="img/bicycle.png" width="30" height="30" alt="" loading="lazy">
         </a>
@@ -25,13 +25,13 @@
               <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Galerie</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Louer</a>
+              <a class="nav-link" href="#gallery">Galerie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contactez-nous</a>
+              <a class="nav-link" href="#louer">Louer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contactez-nous</a>
             </li>
           </ul>
         </div>
@@ -51,8 +51,8 @@
           Rerum eius sequi temporibus quasi molestias tempora non ad magnam, aliquid quas a quibusdam illum vero autem totam dolores sit corporis voluptate et! Aperiam, nisi itaque reprehenderit magni amet dolores.
         </p>
       </div>
-      <div class="gallery">
-        <h2>Gallerie</h2>
+      <div id="gallery" class="gallery">
+        <h2>Galerie</h2>
         <div class="row">
           <div class="col-lg-4">
               <img src="./img/black-steel-lamp-post-1070945.jpg" alt="">
@@ -74,7 +74,7 @@
             </div>
         </div>
       </div>
-      <div class="louer">
+      <div id="louer" class="louer">
         <h2>Louer un vélo</h2>
         <div class="row">
           <div class="col-lg-6">
@@ -123,7 +123,7 @@
           </div>
         </div>
       </div>
-      <div class="contact">
+      <div id="contact" class="contact">
         <h2>Contactez-nous</h2>
         <div class="row"></div>
           <form action="">
@@ -158,9 +158,11 @@
           </div>
         </div>
       </div>
-      <div class="foot col-12">
-        <p>Copyright - Tout droit réservé - Juillet 2020</p>
-        <p>Crée par Marie Françoise Mentor</p>
+      <div class="foot">
+        <div class="contain">
+          <p class="copyright">Copyright - Tout droit réservé - Juillet 2020</p>
+          <p>Crée par Marie Françoise Mentor</p>
+        </div>
       </div>
       
     </div>
