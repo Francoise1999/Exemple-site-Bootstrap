@@ -6,10 +6,6 @@ body {
   background-color: #000;
 }
 
-.navbar {
-  opacity: 0.6;
-}
-
 .container-fluid .contact, .container-fluid .louer, .container-fluid .gallery, .container-fluid .intro {
   color: #fff;
   padding: 50px 20px;
@@ -39,12 +35,19 @@ header .title-main h6 {
 }
 
 .container-fluid .gallery img {
-  width: 300px;
+  width: 100%;
+  height: 90%;
   margin: 20px;
 }
 
 .container-fluid {
   background-color: #212529;
+}
+.container-fluid .foot {
+  background-color: #212529;
+}
+.container-fluid .foot p {
+  color: white;
 }
 .container-fluid .intro {
   width: 50%;
@@ -54,15 +57,24 @@ header .title-main h6 {
 .container-fluid .intro h2, .container-fluid .intro h6 {
   margin-bottom: 30px;
 }
+.container-fluid .intro p {
+  line-height: 35px;
+  font-size: 120%;
+}
+.container-fluid .gallery h2 {
+  padding-bottom: 30px;
+}
 .container-fluid .louer h2 {
   padding-bottom: 20px;
   width: 50%;
   border-top: 1px solid #fff;
   margin: 0 auto;
   padding-top: 40px;
+  padding-bottom: 60px;
 }
 .container-fluid .louer form label {
-  padding: 10px;
+  padding: 30px 10px;
+  font-size: 180%;
 }
 .container-fluid .louer form input {
   margin: 10px;
@@ -70,13 +82,17 @@ header .title-main h6 {
   color: #fff;
   border-radius: 5px;
   border: 1px solid #fff;
+  font-size: 130%;
+  padding: 3px;
 }
 .container-fluid .louer form input[type=submit] {
   background-color: #212529;
   border: 1px solid #fff;
   color: #fff;
   border-radius: 5px;
-  padding: 5px 10px;
+  margin-top: 40px;
+  padding: 10px 15px;
+  width: 20%;
 }
 .container-fluid .louer form input[type=submit]:hover {
   background-color: #fff;
@@ -88,6 +104,8 @@ header .title-main h6 {
   color: #fff;
   border-radius: 5px;
   border: 1px solid #fff;
+  font-size: 130%;
+  margin-top: 10px;
 }
 .container-fluid .contact h2 {
   padding-bottom: 20px;
@@ -103,6 +121,7 @@ header .title-main h6 {
 }
 .container-fluid .contact form label {
   padding: 10px;
+  font-size: 160%;
 }
 .container-fluid .contact form input {
   margin: 10px;
@@ -112,6 +131,7 @@ header .title-main h6 {
   border-radius: 5px;
   color: #fff;
   width: 100%;
+  font-size: 130%;
 }
 .container-fluid .contact form textarea {
   width: 100%;
@@ -120,7 +140,7 @@ header .title-main h6 {
   border-radius: 5px;
   border: 1px solid #fff;
 }
-.container-fluid .contact form input[type=submit] {
+.container-fluid .contact form input[type=button] {
   background-color: #212529;
   border: 1px solid #fff;
   color: #fff;
@@ -129,14 +149,10 @@ header .title-main h6 {
   width: 100%;
   padding: 10px 20px;
 }
-.container-fluid .contact form input[type=submit]:hover {
+.container-fluid .contact form input[type=button]:hover {
   background-color: #fff;
   color: #000;
   transition: 1s;
-}
-
-footer {
-  background-color: #212529;
 }
 
 /*# sourceMappingURL=style.css.map */

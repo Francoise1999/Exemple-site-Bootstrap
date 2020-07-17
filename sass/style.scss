@@ -11,9 +11,6 @@ body{
     background-color: #000;
 }
 
-.navbar{
-    opacity: 0.6;
-}
 
 %bloc{
     color: $text-color;
@@ -47,13 +44,22 @@ header{
 
 
 %img-gallery{
-    width: 300px;
+    width: 100%;
+    height: 90%;
     margin: 20px;
 }
 
 .container-fluid{
     background-color: $dark-color;
     // opacity: 0.4;
+
+    .foot{
+        background-color: $dark-color;
+        p{
+            color: white;
+        }
+        
+    }
 
     .intro{
         @extend %bloc;
@@ -64,6 +70,11 @@ header{
         h2, h6{
             margin-bottom: 30px;
         }
+
+        p{
+            line-height: 35px;
+            font-size: 120%;
+        }
     }
 
     .gallery{
@@ -71,6 +82,10 @@ header{
         
         img{
             @extend %img-gallery; 
+        }
+
+        h2{
+            padding-bottom: 30px;
         }
           
     }
@@ -84,10 +99,12 @@ header{
             border-top: 1px solid #fff;
             margin: 0 auto;
             padding-top: 40px;
+            padding-bottom: 60px;
         }
         form{
             label{
-                padding: 10px;
+                padding: 30px 10px;
+                font-size: 180%;
             }
         
             input{
@@ -96,6 +113,8 @@ header{
                 color: #fff;
                 border-radius: 5px;
                 border: 1px solid #fff;
+                font-size: 130%;
+                padding: 3px;
             }
         
             input[type="submit"]{
@@ -103,7 +122,9 @@ header{
                 border: 1px solid #fff;
                 color: #fff;
                 border-radius: 5px;
-                padding: 5px 10px;
+                margin-top: 40px;
+                padding: 10px 15px;
+                width: 20%;
         
                 &:hover{
                     background-color: #fff;
@@ -117,11 +138,12 @@ header{
                 color: #fff;
                 border-radius: 5px;
                 border: 1px solid #fff;
+                font-size: 130%;
+                margin-top: 10px;
             }
         }
     
     }
-
     
     .contact{
         @extend %bloc;
@@ -138,6 +160,7 @@ header{
             margin: 0 auto;
             label{
                 padding: 10px;
+                font-size: 160%;
                 
             }
         
@@ -149,6 +172,7 @@ header{
                 border-radius: 5px;
                 color: #fff;
                 width: 100%;
+                font-size: 130%;
             }
 
             textarea{
@@ -159,7 +183,7 @@ header{
                 border: 1px solid #fff;
             }
         
-            input[type="submit"]{
+            input[type="button"]{
                 background-color: $dark-color;
                 border: 1px solid #fff;
                 color: #fff;
@@ -175,11 +199,8 @@ header{
                 }
             }
         }
-    
     }
+    
 }
 
-footer{
-    background-color: $dark-color;
-}
 
